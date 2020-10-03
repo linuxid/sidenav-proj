@@ -1,0 +1,9 @@
+<mat-sidenav-container>
+  <mat-sidenav mode="side" [(opened)]="opened">
+    <app-nav></app-nav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <button (click)="opened=!opened; toggleName(opened);">{{butText}}</button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
